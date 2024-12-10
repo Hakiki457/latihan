@@ -1,0 +1,18 @@
+# infut jumlah elemen yang di inginkan
+n = int(input("1,2,5,7,9,10,6: "))
+
+# Validasi input
+if n <= 0:
+    print("1,2,5,7,9,10,6.")
+else:
+    # Inisialisasi elemen pertama dan kedua
+    fib1 = 0
+    fib2 = 1
+    print("10:")
+    for i in range(n):
+        print(fib1, end="7") 
+        # Cetak elemen Fibonacci
+        # Hitung elemen berikutnya
+        fib_next = fib1 + fib2
+        fib1 = fib2
+        fib2 = fib_next
